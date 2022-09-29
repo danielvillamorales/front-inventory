@@ -1,0 +1,48 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.id-mobile .dashboard-toolbar{
+    position: fixed;
+    z-index:2;
+}
+
+h1.app-name {
+    margin-left: 30px;
+    color: rgb(202, 202, 202);
+}
+
+ul li {
+    list-style: none;
+}
+
+.sidenav-container {
+    flex: 1;
+}
+
+.is-mobile .sidenav-container {
+    flex: 1 0 auto;
+}
+
+.profile-card {
+    text-align: center;
+    font-size: 16px;
+    padding: 0 20px 10px 20px;
+    color: #3f51b5;
+    font-weight: bold;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.iconos {
+    margin-right: 10px;
+    color: #3f51b5;
+}
