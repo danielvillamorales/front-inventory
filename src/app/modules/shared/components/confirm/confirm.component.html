@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>Confirmacion</h1>
+<div mat-dialog-content>
+    <p>
+        ¿Estas Seguro que deseas Eliminar?
+    </p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">no</button>
+    <button mat-button (click)="delete()" cdkfocusInitial>si</button>
+</div>
