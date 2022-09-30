@@ -12,7 +12,7 @@
         <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
             <ul fxLayout="row" fxLayoutGap="20px">
                 <li>
-                    <button mat-raised-button color="primary">Agregar Categoria</button>
+                    <button mat-raised-button color="primary" (click)="openCategoryDialog()">Agregar Categoria</button>
                 </li>
             </ul>
         </div>
@@ -50,6 +50,6 @@
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
             <tr mat-row *matRowDef="let row ; columns: displayedColumns;"></tr>
         </table>
-        <mat-paginator [pageSizeOptions]="[5,10,20]"></mat-paginator>
+        <mat-paginator [pageSizeOptions]="[5,10,20]" showFirstLastButtons=""></mat-paginator>
     </mat-card-content>
 </mat-card>
