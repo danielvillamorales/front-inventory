@@ -83,7 +83,7 @@ export class CategoryComponent implements OnInit {
     const dialogRef = this.dialog.open(ConfirmComponent, {
       width: '300px',
       data: {
-        id: id
+        id: id, module:"category"
       }
     });
     dialogRef.afterClosed().subscribe((result: any) => {
